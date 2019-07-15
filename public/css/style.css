@@ -1,41 +1,55 @@
+html,
 body {
   background-color: blanchedalmond;
-}
-header.nav-is-visible {
-  transform: translateX(-260px);
-}
-
-.cd-main-content.nav-is-visible {
-  transform: translateX(-260px);
+  margin: 0 auto;
+  height: 100%;
+  position: relative;
 }
 
-.cd-main-nav {
-  position: fixed;
-  top: 0;
-  right: 0;
-  width: 260px;
-  visibility: hidden;
+header li {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 
-.cd-main-nav.nav-is-visible {
-  visibility: visible;
+.main-nav {
+  display: flex;
+
 }
 
-.cd-main-nav li ul {
+.svg-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: baseline;
+  background-color: black;
+  padding: 1%;
+  margin: 0;
   position: absolute;
-  top: 0;
-  left: 0;
+  bottom: 0;
   width: 100%;
-  transform: translateX(260px);
 }
 
-.cd-main-nav.moves-out>li>a {
-  /* push the navigation items to the left - and lower down opacity - when secondary nav slides in */
-  transform: translateX(-100%);
-  opacity: 0;
+.svg-container img {
+  width: 5%;
+  margin: 0 auto;
+  bottom: 0;
 }
 
-.cd-main-nav.moves-out>li>ul {
-  /* reveal secondary nav */
-  transform: translateX(0);
+.main-nav li {
+  list-style: none;
+  flex-direction: row;
+  padding: 1%;
+}
+
+li a {
+  text-decoration: none;
+  background-color: black;
+  color: white;
+  margin: 1%;
+}
+
+.main-nav-wrapper {
+  display: flex;
+  flex-direction: row;
+  background-color: black;
 }

@@ -13,8 +13,8 @@ app.get('/', (request, response, next) => {
 app.get('/contact', (request, response, next) => {
   response.render("contact.hbs");
 })
-app.get('/home', (request, response, next) => {
-  response.render('home.hbs');
+app.get('/layout', (request, response, next) => {
+  response.render('layout.hbs');
 })
 app.listen(3000, () => {
   console.log('My first app listening on port 3000!')

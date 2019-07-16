@@ -6,15 +6,36 @@ body {
   position: relative;
 }
 
+h1,
+p,
+blockquote {
+  margin: 0 auto;
+  text-align: center;
+}
+
 header li {
   display: flex;
   flex-direction: row;
   justify-content: center;
 }
 
+button {
+  margin: 0 auto;
+  padding:10px;
+  border: none;
+  background-color: black;
+  color: white;
+  border-radius: 50%;
+}
+
 .main-nav {
   display: flex;
 
+}
+
+.main-nav li {
+  margin: 10px;
+  align-items: flex-end;
 }
 
 .svg-container {
